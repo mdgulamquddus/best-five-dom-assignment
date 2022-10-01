@@ -1,3 +1,5 @@
+// Selecte Single Player
+
 document
   .getElementById("all-players")
   .addEventListener("click", function (event) {
@@ -17,6 +19,8 @@ document
     }
   });
 
+// Calculate Five Player Expenses
+
 document.getElementById("calculate").addEventListener("click", function () {
   const fivePlayerSId = document.getElementById("five-players");
   const totalPlayerArray = fivePlayerSId.childNodes;
@@ -33,6 +37,8 @@ document.getElementById("calculate").addEventListener("click", function () {
     return alert("Please Select Five Players");
   }
 });
+
+//Calculate Total Expenses
 
 document
   .getElementById("calculate-total")
