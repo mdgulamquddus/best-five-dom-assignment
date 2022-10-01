@@ -22,12 +22,16 @@ document.getElementById("calculate").addEventListener("click", function () {
   const totalPlayerArray = fivePlayerSId.childNodes;
   const totalPlayer = totalPlayerArray.length;
 
-  const playerValue = getInputValue("single-player-expense");
+  if (totalPlayer === 5) {
+    const playerValue = getInputValue("single-player-expense");
 
-  const getFivePlayerExpenseId = document.getElementById("five-expense");
+    const getFivePlayerExpenseId = document.getElementById("five-expense");
 
-  const totalFivePlayerExpense = totalPlayer * playerValue;
-  getFivePlayerExpenseId.innerText = totalFivePlayerExpense;
+    const totalFivePlayerExpense = totalPlayer * playerValue;
+    getFivePlayerExpenseId.innerText = totalFivePlayerExpense;
+  } else {
+    return alert("Please Select Five Players");
+  }
 });
 
 document
