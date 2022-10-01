@@ -1,3 +1,15 @@
 .big-btn {
   padding: 10px 45px !important;
 }
+header {
+  background-color: #34495e;
+  color: aliceblue;
+}
+.banner {
+  height: 300px;
+  padding: 50px 0;
+}
+.header-details {
+  width: 50%;
+  margin: 0 auto;
+}
