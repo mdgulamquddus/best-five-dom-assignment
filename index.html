@@ -108,7 +108,7 @@
                   <div class="row mb-2">
                     <div class="col-3"><label for="">Per Player</label></div>
                     <div class="col-2">
-                      <input type="number" name="" id="" />
+                      <input id="single-player-expense" type="number" name="" />
                     </div>
                   </div>
                   <button id="calculate" class="btn btn-primary big-btn my-3">
@@ -118,18 +118,20 @@
                     <div class="col-4">
                       <label for="">Player Expenses</label>
                     </div>
-                    <div class="col-2">$<span>00</span></div>
+                    <div class="col-2">
+                      <p>$<span id="five-expense">00</span></p>
+                    </div>
                   </div>
                   <div class="row mb-2">
                     <div class="col-3"><label for="">Manager</label></div>
                     <div class="col-2">
-                      <input type="number" name="" id="" />
+                      <input type="number" name="" id="manager-expense" />
                     </div>
                   </div>
                   <div class="row mb-2">
                     <div class="col-3"><label for="">Coach</label></div>
                     <div class="col-2">
-                      <input type="number" name="" id="" />
+                      <input type="number" name="" id="coach-expense" />
                     </div>
                   </div>
                   <button id="" class="btn btn-primary big-btn my-3">
@@ -148,7 +150,32 @@
         </div>
       </div>
     </main>
-    <script></script>
+    <script>
+      function getInputValue(inputId) {
+        const getSinglePlayerInputId = document.getElementById(inputId);
+        const singlePlayerInputValue = getSinglePlayerInputId.value;
+        const singlePlayerValue = parseInt(singlePlayerInputValue);
+        return singlePlayerValue;
+      }
+      document
+        .getElementById("calculate")
+        .addEventListener("click", function () {
+          const fivePlayerSId = document.getElementById("five-players");
+          const totalPlayerArray = fivePlayerSId.childNodes;
+          const totalPlayer = totalPlayerArray.length;
+          console.log(totalPlayer);
+
+          const playerValue = getInputValue("single-player-expense");
+          console.log(playerValue);
+          const getFivePlayerExpenseId =
+            document.getElementById("five-expense");
+          const fivePlayerExpenseInnerValue = getFivePlayerExpenseId.innerText;
+          const fivePlayerExpense = parseInt(fivePlayerExpenseInnerValue);
+          const totalFivePlayerExpense = totalPlayer * playerValue;
+          getFivePlayerExpenseId.innerText = totalFivePlayerExpense;
+          console.log(totalFivePlayerExpense);
+        });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
