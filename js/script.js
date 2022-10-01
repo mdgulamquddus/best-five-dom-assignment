@@ -11,4 +11,8 @@ document
     const ol = document.getElementById("five-players");
     ol.appendChild(li);
     targetPlayerElementId.disabled = true;
+    const totalPlayer = ol.childNodes;
+    if (totalPlayer.length >= 5) {
+      alert("You Selected Five Players");
+    }
   });

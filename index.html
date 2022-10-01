@@ -10,10 +10,11 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Best Dream Five Players</h1>
+      <h1 class="text-center my-5">Best Dream Five Players</h1>
     </header>
     <main class="container">
       <div class="row">
@@ -24,7 +25,9 @@
                 <img src="images/lionel.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-one" class="card-title">Lionel Messi</h5>
-                  <button id="palyer-1" class="btn btn-primary">Select</button>
+                  <button id="palyer-1" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -33,7 +36,9 @@
                 <img src="images/kylian.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-two" class="card-title">Kylian Mbappé</h5>
-                  <button id="palyer-2" class="btn btn-primary">Select</button>
+                  <button id="palyer-2" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -42,7 +47,9 @@
                 <img src="images/neymar.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-three" class="card-title">Neymar Jr</h5>
-                  <button id="palyer-3" class="btn btn-primary">Select</button>
+                  <button id="palyer-3" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -51,7 +58,9 @@
                 <img src="images/renato.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-four" class="card-title">Renato Sanches</h5>
-                  <button id="palyer-4" class="btn btn-primary">Select</button>
+                  <button id="palyer-4" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -60,7 +69,9 @@
                 <img src="images/sergio.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-five" class="card-title">Sergio Ramos</h5>
-                  <button id="palyer-5" class="btn btn-primary">Select</button>
+                  <button id="palyer-5" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -69,7 +80,9 @@
                 <img src="images/vitor.png" alt="" />
                 <div class="card-body">
                   <h5 id="palyer-six" class="card-title">Vítor Machado</h5>
-                  <button id="palyer-6" class="btn btn-primary">Select</button>
+                  <button id="palyer-6" class="btn btn-primary big-btn">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -78,11 +91,56 @@
 
         <div class="col-4">
           <div class="row text-center">
-            <div class="col-sm-12">
+            <div class="col-sm-12 mb-5">
               <div class="card">
                 <div class="card-body">
                   <h2 class="card-title fw-semibold">Best Five Players</h2>
                   <ol id="five-players"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title fw-semibold">Budget</h2>
+                  <div class="row mb-2">
+                    <div class="col-3"><label for="">Per Player</label></div>
+                    <div class="col-2">
+                      <input type="number" name="" id="" />
+                    </div>
+                  </div>
+                  <button id="calculate" class="btn btn-primary big-btn my-3">
+                    Calculate
+                  </button>
+                  <div class="row mb-3">
+                    <div class="col-4">
+                      <label for="">Player Expenses</label>
+                    </div>
+                    <div class="col-2">$<span>00</span></div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3"><label for="">Manager</label></div>
+                    <div class="col-2">
+                      <input type="number" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3"><label for="">Coach</label></div>
+                    <div class="col-2">
+                      <input type="number" name="" id="" />
+                    </div>
+                  </div>
+                  <button id="" class="btn btn-primary big-btn my-3">
+                    Calculate Total
+                  </button>
+                  <div class="row mb-3">
+                    <div class="col-2">
+                      <label for="">Total</label>
+                    </div>
+                    <div class="col-10 text-danger">$<span>00</span></div>
+                  </div>
                 </div>
               </div>
             </div>
